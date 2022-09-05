@@ -1,0 +1,169 @@
+.about {
+  position: absolute;
+  width: 60%;
+  top: 25%;
+  left: 15%;
+  bottom: 0;
+
+  
+  // overflow-y: hidden;
+  overflow-x: scroll;
+  .content {
+    margin: 5px 0;
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: coolvetica;
+    span {
+      letter-spacing: 1px;
+      padding-right: 4px 4px;
+    }
+    .sub-title {
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #9a8b37;
+    }
+    .name {
+      color: #ffd700;
+    }
+  }
+  .section2 {
+    p {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+      animation: fadeIn 1s 1.6s backwards;
+    }
+  }
+  .section3 {
+    animation: fadeIn 1s 1.8s backwards;
+    .skills {
+      font-size: 1.2rem;
+      .user-skills {
+        font-size: 2.2rem;
+        color: #ffd900e0;
+      }
+      .skill-group {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #9a8b37;
+        .skill-name {
+          animation: fadeIn 1s 2s backwards;
+          font-size: 1.7rem;
+          color: #ada687ec;
+          word-spacing: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .btn-group {
+    margin: 0 auto;
+    .btn {
+      color: #ffd700;
+      background: transparent;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+
+      margin-right: 30px;
+      border: 1px solid #ffd700;
+      animation: fadeIn 1s 2s backwards;
+      white-space: nowrap;
+      animation-delay: 1.9s;
+
+      &:hover {
+        background: #ffd700;
+        a{
+          color: #333;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: #ffd700;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    width:80%;
+    left: 10%;
+    bottom: 10%;
+
+    .content {
+      line-height: 3.2rem;
+      font-size: 2.7rem;
+      font-weight: 300;
+      .sub-title {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+      .name {
+        color: #ffd700;
+      }
+    }
+    .section2 {
+      p {
+        font-size: 1.5rem;
+        word-spacing: 10px;
+        font-weight: 300;
+        
+      }
+    }
+    .section3 {
+      
+      .skills {
+        
+        .user-skills {
+          
+          font-size: 1.7rem;
+          color: #ffd900e0;
+          animation: fadeIn 1s 1.8s backwards;
+        }
+        .skill-group {
+         
+          font-size: 1.8rem;
+          font-weight: 400;
+          color: #9a8b37;
+          .type{
+            animation: fadeIn 1s 1.8s backwards;
+          }
+          .skill-name {
+            animation: fadeIn 1s 2s backwards;
+            font-size: 1.7rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .btn-group {
+      margin: 0 auto;
+      .btn {
+        color: #ffd700;
+        background: transparent;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+
+        margin-right: 30px;
+        border: 1px solid #ffd700;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        animation-delay: 1.9s;
+
+        &:hover {
+          background: #ffd700;
+          color: #333;
+        }
+      }
+    }
+  }
+}

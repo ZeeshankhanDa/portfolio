@@ -1,0 +1,129 @@
+.contact {
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 15%;
+    bottom: 0;
+
+    overflow: hidden;
+    .content {
+        margin: 5px 0;
+        line-height: 4rem;
+        font-size: 4rem;
+        font-weight: 400;
+        font-family: coolvetica;
+        .name {
+            color: #ffd700;
+          }
+    }
+    .contact-form{
+        form{
+            animation: fadeIn 1s 1.6s backwards;
+            margin-top: 20px;
+            width: 70%;
+            height: auto;
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+           
+            .input1{
+                display: flex;
+                gap: 4px;
+                .user-text{
+                    width: 50%;
+                    height: 50px;
+                }
+                .email-text{
+                    width: 50%;
+                    height: 50px;
+                }
+                
+            
+            }
+            .subject-text{
+                height: 50px;
+            }
+            .text-area{
+                height: 150px;
+                padding-top: 10px;
+              
+                    
+            }
+            .inp{
+                background-color: #141a1c;
+                border:0 solid;
+                border-radius: 3px;
+                font-size: 1.5rem;
+                color: #ffff;
+                padding-right:20px;
+                padding-left:20px;
+    
+                &:focus{
+                    outline: 0 solid;
+                }
+            }
+            .smbt-btn{
+                animation: fadeIn 1s 2s backwards;
+                padding: 0;
+                width: 25%;
+                min-width: 50px;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 10px 12px;
+                margin: 10px auto;
+                background-color: transparent;
+                color: #ffd700;
+                border: 1px solid #ffd700;
+                &:hover{
+                    background-color:#ffd700;
+                    color: #141a1c;
+                }
+            }
+            
+        }
+        
+
+    }
+}
+@media (max-width:600px){
+    
+    .contact{
+        width:80%;
+        bottom: 10%;
+        .content{
+        line-height: 3.2rem;
+        font-size: 2.7rem;
+        font-weight: 300;
+        }
+    .contact-form{
+        form{
+            width: 75%;
+            .input1{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                .user-text,.email-text{
+                    width: auto;
+                    height: 30px;
+                }
+            }
+            .subject-text{
+                height: 40px;
+            }
+            .text-area{
+                height: 100px;
+                padding-top: 10px;
+              
+                    
+            }
+    .smbt-btn{
+
+        text-align: center;
+        font-size: 1rem;
+        
+    }
+}
+        }
+}
+
+}
